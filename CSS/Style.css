@@ -1,0 +1,372 @@
+* {
+    margin: 0px;
+    padding: 00px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* common CSS */
+.container-fluid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(207, 209, 205);
+    height: 31px;
+    /* border-bottom: 1px solid black; */
+    /* position: relative; */
+}
+
+.container {
+    max-width: 1350px;
+    width: 100%;
+    background-color: rgb(11, 10, 10);
+    box-shadow: 0px 0px 25px rgb(54, 50, 50);
+    padding: 0 35px;
+    height: 70px;
+    border-radius: 10px;
+    position: fixed;
+    overflow: hidden;
+    z-index: 2;
+
+}
+
+/* header css */
+
+
+.menu>span {
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo>p {
+    font-size: 25px;
+    color: #f61a1a;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.filter_button>button {
+    background-color: rgb(215, 233, 228);
+    font-size: 16px;
+    width: 110px;
+    padding: 8px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+/* Menu-Navbar */
+.nav-menu {
+    height: 30px;
+    background-color: hwb(0 81% 18% / 0.945);
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.nav-menu>ul>a>li {
+    display: inline;
+    padding-left: 40px;
+    transition: .3s;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+.nav-menu>input{
+    margin-left: 40px;
+   
+    width: 30ch;
+    border-radius: 5px;
+    border: none;
+    padding: 0px 15px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 7px;
+    color: black;
+    background-color: hwb(0 81% 18% / 0.945);
+    
+    border-bottom: 1px solid black;
+}
+/* filter section */
+.filter {
+    width: 25%;
+    height: 100vh;
+    background-color: #eae6e6;
+    box-shadow: grey 2px 5px 20px;
+    position: fixed;
+    right: 0;
+    top: 9.5%;
+    z-index: 2;
+    /* padding: 25PX; */
+    padding-top: 0%;
+    margin-right: -25%;
+    box-sizing: border-box;
+    transition: .5s;
+    border-top: 3px solid #b4afaf;
+    border-right: 2px solid #b4afaf;
+}
+
+.filter_section {
+    box-shadow: grey 5px 5px 20px 5px;
+    padding: 30px;
+    margin: 35px;
+    background-color: rgb(230, 230, 230);
+    box-sizing: border-box;
+
+}
+
+.head_filter {
+    background-color: #c3bebe;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 5px 10px rgb(92, 92, 92);
+    margin-bottom: 50px;
+}
+
+.filter_section h3 {
+    padding: 10px 0;
+}
+
+.user_inp {
+    margin-bottom: 20px;
+
+}
+
+.user_inp>input {
+    padding: 15px;
+    width: 100%;
+    font-size: 15px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.user_inp>select {
+    padding: 13px;
+    width: 100%;
+    font-size: 15px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.user_inp1 {
+    display: flex;
+
+    justify-content: space-between;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+
+
+.min_maxprice>input {
+    width: 110px;
+    padding: 10px ;
+    border-radius: 3px;
+    border: none;
+
+}
+
+.min_maxprice>p {
+    padding: 8px;
+}
+
+.user_inp>button {
+    background-color: rgb(41, 40, 40);
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.user_inp>button:hover {
+    box-shadow: grey 3px 3px 10px 3px;
+}
+
+/* menu section */
+.side_menu {
+    width: 21%;
+    height: 100vh;
+    background-color: #eae6e6;
+    border-top: 3px solid #b3b0b0;
+    border-right: 2px solid #b4afaf;
+    box-shadow: grey 2px 5px 20px;
+    margin-left: -21%;
+    top: 9.5%;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+    transition: .5s;
+    
+}
+
+.container_menu>input {
+    width: 85%;
+    padding: 15px;
+    margin: 20px;
+    background-color: #f4eeee;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 12px grey;
+    font-size: large;
+    color: black;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+.sign_in>a {
+    width: 100%;
+    height: 50px;
+    background-color: #c3bebe;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-top: 8px;
+    text-decoration: none;
+    box-shadow: 2px 5px 5px grey;
+}
+
+.sign_in>a>h2 {
+    color: rgb(14, 15, 15);
+}
+
+.sign_in>a>span {
+    padding: 6px;
+    font-size: 25px;
+    color: rgb(14, 15, 15);
+}
+
+.menu>ul {
+
+    list-style: none;
+    padding: 0px 30px;
+    justify-content: center;
+    padding-bottom: 25px;
+
+}
+
+.menu li {
+    font-size: 16px;
+    font-weight: 550;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: rgba(35, 35, 35, 0.732);
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(72, 71, 71);
+}
+
+.help {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.help>p {
+    padding: 10px;
+    font-size: 17px;
+}
+
+/* Animations */
+.menu>span:hover {
+    color: rgb(236, 131, 55);
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    color: rgb(5, 5, 5);
+}
+
+.card_item:hover {
+    scale: 103%;
+}
+
+.nav-menu li:hover {
+    color: rgba(255, 0, 0, .8);
+    font-size: 18px;
+
+}
+
+/* Product section */
+#card_prod {
+    width: 100%;
+    margin: 50px 0;
+    height: 100%;
+    
+
+
+}
+
+.prod_container {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    column-gap: 5%;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    /* margin-bottom: 50px */
+}
+
+.card_item {
+    width: 30%;
+    background-color: rgb(240, 242, 243);
+    box-shadow: 3px 5px 10px rgb(83, 76, 76);
+    margin-bottom: 50px;
+    transition: .3s;
+    border-radius: 20px;
+    
+}
+
+.prod_img {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+
+}
+
+.prod_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+
+
